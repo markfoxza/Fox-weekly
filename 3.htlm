@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fox Family — Week 9-15 Mar 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Source Sans 3',sans-serif;background:#F7F5F0;color:#1A1A2E;line-height:1.5;padding:16px}
+  .nav{position:sticky;top:0;z-index:100;background:rgba(247,245,240,0.92);backdrop-filter:blur(8px);padding:10px 0;display:flex;justify-content:center;gap:6px;border-bottom:1px solid rgba(0,0,0,0.06)}
+  .nav a{text-decoration:none;font-size:11px;font-weight:600;padding:6px 14px;border-radius:20px;color:#666;transition:all 0.2s}
+  .nav a:hover,.nav a.active{background:#1A1A2E;color:#fff}
+  .nav a.sun{background:#EDE9FE;color:#6D28D9}.nav a.sun:hover{background:#6D28D9;color:#fff}
+  .card{max-width:540px;margin:20px auto;background:#FFFDF8;border-radius:24px;overflow:hidden;box-shadow:0 6px 30px rgba(26,26,46,0.07)}
+  .hdr{padding:24px 28px 18px;position:relative;overflow:hidden}
+  .hdr::after{content:'';position:absolute;top:-30px;right:-20px;width:120px;height:120px;background:radial-gradient(circle,rgba(255,255,255,0.07) 0%,transparent 70%);border-radius:50%}
+  .hdr .dl{font-family:'Caveat',cursive;font-size:15px;color:rgba(255,255,255,0.5);letter-spacing:2px;text-transform:uppercase}
+  .hdr .dt{font-family:'Playfair Display',serif;font-size:32px;font-weight:800;color:#fff;line-height:1.1;margin:2px 0 6px}
+  .hdr .ds{font-size:12.5px;color:rgba(255,255,255,0.5);font-weight:300;line-height:1.4}
+  .hdr.mon{background:linear-gradient(135deg,#1A1A2E,#2D2B55,#3D2B6B)}
+  .hdr.tue{background:linear-gradient(135deg,#1B4332,#2D6A4F,#40916C)}
+  .hdr.wed{background:linear-gradient(135deg,#831843,#9D174D,#BE185D)}
+  .hdr.thu{background:linear-gradient(135deg,#1E3A5F,#1E40AF,#3B82F6)}
+  .hdr.fri{background:linear-gradient(135deg,#7C2D12,#C2410C,#EA580C)}
+  .hdr.sat{background:linear-gradient(135deg,#3B0764,#6D28D9,#8B5CF6)}
+  .hdr.sun{background:linear-gradient(135deg,#065F46,#059669,#34D399)}
+  .body{padding:20px 24px 16px}
+  .blk{margin-bottom:14px;border-radius:14px;padding:14px 16px 12px;position:relative}
+  .blk::before{content:'';position:absolute;left:0;top:10px;bottom:10px;width:4px;border-radius:4px}
+  .blk.luke{background:#FFF7F0}.blk.luke::before{background:#E8712A}
+  .blk.emma{background:#F0F5FC}.blk.emma::before{background:#3B7DD8}
+  .blk.gracie{background:#F0FAF2}.blk.gracie::before{background:#2EA355}
+  .blk.family{background:#F4F0FF}.blk.family::before{background:#8B5CF6}
+  .bh{display:flex;align-items:center;gap:7px;margin-bottom:6px;flex-wrap:wrap}
+  .bi{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+  .blk.luke .bi{background:#E8712A}.blk.emma .bi{background:#3B7DD8}.blk.gracie .bi{background:#2EA355}.blk.family .bi{background:#8B5CF6}
+  .bn{font-weight:700;font-size:14px}
+  .blk.luke .bn{color:#C45A1A}.blk.emma .bn{color:#2A5FA8}.blk.gracie .bn{color:#1E7A3D}.blk.family .bn{color:#6D28D9}
+  .bg{font-size:10px;font-weight:500;opacity:.5}
+  .tg{display:inline-block;font-size:8.5px;font-weight:700;padding:2px 7px;border-radius:16px;text-transform:uppercase;letter-spacing:.4px;margin-left:3px}
+  .tg.travel{background:#ECFDF5;color:#065F46}.tg.sport{background:#E0F2FE;color:#0369A1}.tg.test{background:#FEF3C7;color:#92400E}
+  .tg.social{background:#FCE7F3;color:#9D174D}.tg.weekly{background:#F3F4F6;color:#374151}.tg.admin{background:#EDE9FE;color:#6D28D9}
+  .it{font-size:12.5px;color:#555;padding:2px 0 2px 11px;position:relative;line-height:1.4}
+  .it::before{content:'';position:absolute;left:0;top:9px;width:4px;height:4px;border-radius:50%;background:#ccc}
+  .it strong{color:#1A1A2E}
+  .it .tm{font-weight:700;color:#1A1A2E;font-size:11.5px}
+  .rec{font-size:11.5px;color:#6B7280;padding:5px 0 1px 11px;border-top:1px dashed #E5E7EB;margin-top:5px;position:relative}
+  .rec::before{content:'↻';position:absolute;left:-3px;top:5px;font-size:10px;color:#9CA3AF}
+  .rbox{margin:14px 0 12px;border-radius:12px;padding:12px 16px}
+  .rbox.red{background:#FEF2F2;border:1.5px solid #FECACA}.rbox.red .lb{color:#DC2626}.rbox.red li{color:#991B1B}
+  .rbox.yel{background:linear-gradient(135deg,#FFFBEB,#FEF9E7);border:1.5px solid #FDE68A}.rbox.yel .lb{color:#D97706}.rbox.yel li{color:#78350F}
+  .rbox.pur{background:#F3EEFF;border:1.5px solid #DDD0FA}.rbox.pur .lb{color:#6D28D9}.rbox.pur li{color:#4C1D95}
+  .rbox .lb{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:5px}
+  .rbox li{font-size:12px;margin:3px 0 3px 16px;line-height:1.4}
+  .ft{text-align:center;padding:8px 0 14px;font-size:9.5px;color:#bbb;letter-spacing:1px}
+  @media print{body{background:#fff;padding:0}.card{box-shadow:none;page-break-inside:avoid;margin:10px auto}.nav{display:none}.card{page-break-after:always}}
+</style>
+</head>
+<body>
+<div class="nav">
+  <a href="#mon">Mon</a><a href="#tue">Tue</a><a href="#wed">Wed</a><a href="#thu">Thu</a><a href="#fri">Fri</a><a href="#sat">Sat</a><a href="#sun" class="sun">Sun</a>
+</div>
+
+<!-- MONDAY 9 MAR -->
+
+<div class="card" id="mon">
+<div class="hdr mon"><div class="dl">Monday</div><div class="dt">9 March</div><div class="ds">Arts & Culture Week · Instrument Open Day · Hockey Trials Rd 2 · Pack for KZN!</div></div>
+<div class="body">
+  <div class="blk luke"><div class="bh"><div class="bi">🏑</div><div><div class="bn">Luke <span class="bg">Grade 7</span></div></div><span class="tg sport">Trials</span></div>
+  <div class="it"><strong>Arts & Culture Week begins</strong> (9–13 Mar)</div>
+  <div class="it"><span class="tm">15:30</span> <strong>Hockey U13 Trials Round 2</strong> — SomCol Astro (until 16:30)</div>
+  <div class="rec"><span class="tg weekly">Every Mon</span> PE</div></div>
+
+  <div class="blk emma"><div class="bh"><div class="bi">🎷</div><div><div class="bn">Emma <span class="bg">Grade 5</span></div></div></div>
+  <div class="it"><span class="tm">07:15</span> <strong>Instrument Open Day</strong> — Prep Hall (until 7:50). Saxophone!</div>
+  <div class="it">Arts & Culture Week begins</div>
+  <div class="rec"><span class="tg weekly">Every Mon</span> Drama + PE · 💊 medicine</div></div>
+
+  <div class="blk gracie"><div class="bh"><div class="bi">🌟</div><div><div class="bn">Gracie <span class="bg">Grade R</span></div></div></div>
+  <div class="it">Normal school day</div>
+  <div class="rec"><span class="tg weekly">Every Mon</span> Show & Tell</div></div>
+
+  <div class="blk family"><div class="bh"><div class="bi">📋</div><div><div class="bn">Family</div></div><span class="tg admin">Prep</span></div>
+  <div class="it">🧳 <strong>Start packing for KZN trip</strong> (Thu departure!)</div>
+  <div class="it">📋 Brief Ingrid & John on kids' schedule Thu–Sun</div></div>
+
+  <div class="rbox red"><div class="lb">🔴 Action Required</div><ul>
+  <li><strong>Emma:</strong> Arrive early for Instrument Open Day 7:15am + PE kit</li>
+  <li><strong>Luke:</strong> Hockey kit for trials 15:30</li>
+  <li><strong>KZN prep:</strong> Start packing, print schedule for Ingrid & John</li></ul></div>
+
+  <div class="rbox yel"><div class="lb">💡 Think Ahead → Tuesday</div><ul>
+  <li>Emma: English Spelling list 16 + Art Theory + Science test</li>
+  <li>Luke: Hockey Trials Rd 3 at 14:30</li>
+  <li>Gracie: P/T Feedback Meetings 1pm + Gymnastics + Library bag</li></ul></div>
+</div>
+<div class="ft">FOX FAMILY · STELLENBOSCH</div>
+</div>
+
+<!-- TUESDAY 10 MAR -->
+
+<div class="card" id="tue">
+<div class="hdr tue"><div class="dl">Tuesday</div><div class="dt">10 March</div><div class="ds">Emma triple test day · Luke Hockey Trials Rd 3 · Gracie P/T meetings · Pack KZN!</div></div>
+<div class="body">
+  <div class="blk luke"><div class="bh"><div class="bi">🏑</div><div><div class="bn">Luke <span class="bg">Grade 7</span></div></div><span class="tg sport">Trials</span></div>
+  <div class="it"><span class="tm">14:30</span> <strong>Hockey U13 Trials Round 3</strong> — SomCol Astro (until 15:30)</div>
+  <div class="it">Final teams announced tomorrow!</div>
+  <div class="rec"><span class="tg weekly">Every Tue</span> Cricket</div></div>
+
+  <div class="blk emma"><div class="bh"><div class="bi">🎷</div><div><div class="bn">Emma <span class="bg">Grade 5</span></div></div><span class="tg test">Tests x3</span></div>
+  <div class="it"><strong>English Spelling list 16</strong></div>
+  <div class="it"><strong>Art Theory test</strong></div>
+  <div class="it"><strong>Science test</strong></div>
+  <div class="rec"><span class="tg weekly">Every Tue</span> Water Polo until 15:30 · 💊 medicine</div></div>
+
+  <div class="blk gracie"><div class="bh"><div class="bi">🌟</div><div><div class="bn">Gracie <span class="bg">Grade R</span></div></div><span class="tg admin">P/T</span></div>
+  <div class="it"><span class="tm">13:00</span> <strong>Pre-Prep Parent/Teacher Feedback Meetings</strong></div>
+  <div class="rec"><span class="tg weekly">Every Tue</span> Library bag · Aftercare till 13:00 · Gymnastics 13:15–14:15</div></div>
+
+  <div class="blk family"><div class="bh"><div class="bi">🧳</div><div><div class="bn">Family</div></div></div>
+  <div class="it">KZN departure in 2 days — keep packing!</div></div>
+
+  <div class="rbox red"><div class="lb">🔴 Action Required</div><ul>
+  <li><strong>Emma:</strong> Study for 3 tests! Water polo kit · 💊 medicine</li>
+  <li><strong>Luke:</strong> Hockey kit (trials) + cricket kit</li>
+  <li><strong>Gracie:</strong> Library bag + gymnastics kit</li>
+  <li><strong>Parents:</strong> Attend Gracie P/T meeting</li></ul></div>
+
+  <div class="rbox yel"><div class="lb">💡 Think Ahead → Wednesday</div><ul>
+  <li>Sophy: Me+You Leader Meeting morning (Gym Hostel)</li>
+  <li>Emma: English Oral + Music Concert 6pm (check if performing!)</li>
+  <li>Gracie: P/T meetings continue + Choir</li>
+  <li>Hockey team lists announced today — check Schoolbox!</li></ul></div>
+</div>
+<div class="ft">FOX FAMILY · STELLENBOSCH</div>
+</div>
+
+<!-- WEDNESDAY 11 MAR -->
+
+<div class="card" id="wed">
+<div class="hdr wed"><div class="dl">Wednesday</div><div class="dt">11 March</div><div class="ds">Sophy Me+You · Emma English Oral · Music Concert 6pm · Hockey teams announced · P/T</div></div>
+<div class="body">
+  <div class="blk luke"><div class="bh"><div class="bi">🏑</div><div><div class="bn">Luke <span class="bg">Grade 7</span></div></div></div>
+  <div class="it"><strong>Hockey final teams announced today!</strong> Check Schoolbox</div>
+  <div class="it"><span class="tm">18:00</span> <strong>Gr 4-7 Music Concert</strong> — St Matthew's Chapel. Check if Luke performs (Gr 6-7 Marimba Band). Number Ones uniform. Arrive 17:15 if in ensemble</div>
+  <div class="rec"><span class="tg weekly">Every Wed</span> Cricket (match day)</div></div>
+
+  <div class="blk emma"><div class="bh"><div class="bi">🎷</div><div><div class="bn">Emma <span class="bg">Grade 5</span></div></div><span class="tg test">Oral</span></div>
+  <div class="it"><strong>English Oral presentation</strong></div>
+  <div class="it"><span class="tm">18:00</span> <strong>Gr 4-7 Music Concert</strong> — check if performing (Saxophone / Ensemble). Number Ones. Arrive 17:15 if in ensemble</div>
+  <div class="rec"><span class="tg weekly">Every Wed</span> 💊 medicine</div></div>
+
+  <div class="blk gracie"><div class="bh"><div class="bi">🌟</div><div><div class="bn">Gracie <span class="bg">Grade R</span></div></div><span class="tg admin">P/T</span></div>
+  <div class="it"><span class="tm">13:00</span> <strong>Pre-Prep P/T Feedback Meetings</strong> (Day 2)</div>
+  <div class="rec"><span class="tg weekly">Every Wed</span> Choir until 13:20</div></div>
+
+  <div class="blk family"><div class="bh"><div class="bi">👩</div><div><div class="bn">Sophy</div></div></div>
+  <div class="it"><strong>Me+You Leader Meeting (morning)</strong> — Gym Hostel</div>
+  <div class="it">🧳 KZN tomorrow! Final packing tonight</div></div>
+
+  <div class="rbox red"><div class="lb">🔴 Action Required</div><ul>
+  <li><strong>Luke & Emma:</strong> Number Ones uniform for Music Concert (if performing). Arrive 17:15</li>
+  <li><strong>Gracie:</strong> Pickup 13:20 (choir)</li>
+  <li><strong>KZN:</strong> Bags packed tonight! Flight tomorrow morning</li>
+  <li><strong>Ingrid & John:</strong> Final brief — handover schedule for Thu–Sun</li></ul></div>
+
+  <div class="rbox yel"><div class="lb">💡 Think Ahead → Thursday</div><ul>
+  <li>✈️ MARK & SOPHY FLY TO KZN! Ingrid & John take over</li>
+  <li>Swimming Inter-House Relay Gala 10:45–13:30 (Luke & Emma)</li>
+  <li>School ends 13:30 for Gr 2-7 — collect by 14:15!</li>
+  <li>Kit: house shirt, navy shorts, SomCol swimsuit, cap, goggles, towel</li></ul></div>
+</div>
+<div class="ft">FOX FAMILY · STELLENBOSCH</div>
+</div>
+
+<!-- THURSDAY 12 MAR -->
+
+<div class="card" id="thu">
+<div class="hdr thu"><div class="dl">Thursday</div><div class="dt">12 March</div><div class="ds">✈️ Parents fly to KZN · Swimming Gala · Ingrid & John in charge</div></div>
+<div class="body">
+  <div class="blk family"><div class="bh"><div class="bi">✈️</div><div><div class="bn">Mark & Sophy → KZN</div></div><span class="tg travel">Away</span></div>
+  <div class="it"><span class="tm">10:25</span> Flight CPT → DUR. Arrive 12:30</div>
+  <div class="it">Hartford House Hotel, Mooi River (3 nights)</div>
+  <div class="it">👵 <strong>Ingrid & John with all 3 kids Thu–Sun</strong></div></div>
+
+  <div class="blk luke"><div class="bh"><div class="bi">🏊</div><div><div class="bn">Luke <span class="bg">Grade 7</span></div></div><span class="tg sport">Gala</span></div>
+  <div class="it"><span class="tm">10:45</span> <strong>Inter-House Swimming Relay Gala</strong> (until 13:30)</div>
+  <div class="it">Kit: house shirt, navy shorts, SomCol swimsuit, cap, goggles, towel</div>
+  <div class="it"><strong>School ends 13:30</strong> — collect by 14:15 or Prep Library supervision</div>
+  <div class="it">No co-curricular activities Gr 4-7 today</div></div>
+
+  <div class="blk emma"><div class="bh"><div class="bi">🏊</div><div><div class="bn">Emma <span class="bg">Grade 5</span></div></div><span class="tg sport">Gala</span></div>
+  <div class="it"><span class="tm">10:45</span> <strong>Inter-House Swimming Relay Gala</strong> (until 13:30)</div>
+  <div class="it">Same kit as Luke. <strong>School ends 13:30</strong></div>
+  <div class="rec"><span class="tg weekly">Every Thu</span> Swimming + Riding 15:00 — <strong>check if riding still on (school ends early)</strong> · 💊 medicine</div></div>
+
+  <div class="blk gracie"><div class="bh"><div class="bi">🌟</div><div><div class="bn">Gracie <span class="bg">Grade R</span></div></div></div>
+  <div class="it">Normal Pre-Prep day (gala is Gr 2-7 only)</div>
+  <div class="rec"><span class="tg weekly">Every Thu</span> Swimming things + home swim 14:30</div></div>
+
+  <div class="rbox pur"><div class="lb">👵 Ingrid & John — Key Info</div><ul>
+  <li>Luke & Emma: Gala ends 13:30, collect by 14:15 from normal pickup</li>
+  <li>Emma: Check if horse riding still on (early finish day)</li>
+  <li>Gracie: Normal day, home swim lesson at 14:30</li>
+  <li>Emma: 💊 morning medicine!</li></ul></div>
+
+  <div class="rbox yel"><div class="lb">💡 Think Ahead → Friday</div><ul>
+  <li>🚨 HUGE FRIDAY: Netball Trials 13:30 + Cricket Inter-House + Luke Maths test + Chloe's party</li>
+  <li>Emma: SAXOPHONE + NEST shirt (Gracie)</li>
+  <li>Ingrid & John managing all logistics</li></ul></div>
+</div>
+<div class="ft">FOX FAMILY · STELLENBOSCH</div>
+</div>
+
+<!-- FRIDAY 13 MAR -->
+
+<div class="card" id="fri">
+<div class="hdr fri"><div class="dl">Friday</div><div class="dt">13 March</div><div class="ds">🚨 Massive day · Netball Trials · Cricket Inter-House · Luke Maths test · Chloe's party</div></div>
+<div class="body">
+  <div class="blk luke"><div class="bh"><div class="bi">🏏</div><div><div class="bn">Luke <span class="bg">Grade 7</span></div></div><span class="tg test">Test</span><span class="tg sport">Sport</span><span class="tg social">Party</span></div>
+  <div class="it"><strong>Maths Class Test</strong></div>
+  <div class="it"><strong>Cricket Inter-House Day</strong> — A teams Taberer Field, B teams Vineyard Field</div>
+  <div class="it"><strong>IsiXhosa Written Test</strong> (Emma)</div>
+  <div class="it"><span class="tm">Evening</span> <strong>Chloe's birthday party</strong> — Ingrid & John to manage logistics</div></div>
+
+  <div class="blk emma"><div class="bh"><div class="bi">🎷</div><div><div class="bn">Emma <span class="bg">Grade 5</span></div></div><span class="tg test">Test</span><span class="tg sport">Trials</span></div>
+  <div class="it"><strong>IsiXhosa Written Test</strong></div>
+  <div class="it"><span class="tm">13:30</span> <strong>Netball Trials</strong> — SomCol Netball Courts, U10-U13 Girls (until 15:00, meet 13:15)</div>
+  <div class="it">Note: If also in cricket, do netball first → cricket after</div>
+  <div class="rec"><span class="tg weekly">Every Fri</span> SAXOPHONE · 💊 medicine</div></div>
+
+  <div class="blk gracie"><div class="bh"><div class="bi">🌟</div><div><div class="bn">Gracie <span class="bg">Grade R</span></div></div></div>
+  <div class="it">Normal school day</div>
+  <div class="rec"><span class="tg weekly">Every Fri</span> NEST shirt</div></div>
+
+  <div class="blk family"><div class="bh"><div class="bi">👵</div><div><div class="bn">Ingrid & John (Day 2)</div></div></div>
+  <div class="it">🚨 Big logistics day — cricket + netball + party transport</div>
+  <div class="it">Parents still in KZN</div></div>
+
+  <div class="rbox pur"><div class="lb">👵 Ingrid & John — Key Info</div><ul>
+  <li><strong>Emma:</strong> Netball kit + saxophone + 💊 medicine. Meet netball courts 13:15</li>
+  <li><strong>Luke:</strong> Cricket kit. Party logistics TBC</li>
+  <li><strong>Gracie:</strong> NEST shirt. Normal pickup</li>
+  <li>Chloe's party — transport for Luke</li></ul></div>
+
+  <div class="rbox yel"><div class="lb">💡 Think Ahead → Saturday</div><ul>
+  <li>Emma: Netball Skills Clinic 9am — check if she's going</li>
+  <li>Morning family appointment — confirm/reschedule?</li>
+  <li>Parents in KZN until Sunday</li></ul></div>
+</div>
+<div class="ft">FOX FAMILY · STELLENBOSCH</div>
+</div>
+
+<!-- SATURDAY 14 MAR -->
+
+<div class="card" id="sat">
+<div class="hdr sat"><div class="dl">Saturday</div><div class="dt">14 March</div><div class="ds">Emma Netball Clinic · Parents in KZN · Ingrid & John Day 3</div></div>
+<div class="body">
+  <div class="blk emma"><div class="bh"><div class="bi">🏐</div><div><div class="bn">Emma <span class="bg">Grade 5</span></div></div><span class="tg sport">Netball</span></div>
+  <div class="it"><span class="tm">09:00</span> <strong>Netball U10-U13 Skills Clinic</strong> — Somerset College</div></div>
+
+  <div class="blk luke"><div class="bh"><div class="bi">🏏</div><div><div class="bn">Luke <span class="bg">Grade 7</span></div></div></div>
+  <div class="it">Free day</div></div>
+
+  <div class="blk gracie"><div class="bh"><div class="bi">🌟</div><div><div class="bn">Gracie <span class="bg">Grade R</span></div></div></div>
+  <div class="it">Free day</div></div>
+
+  <div class="blk family"><div class="bh"><div class="bi">👵</div><div><div class="bn">Ingrid & John (Day 3)</div></div></div>
+  <div class="it">Morning appointment — confirm if still on</div>
+  <div class="it">Parents in KZN, return tomorrow</div></div>
+
+  <div class="rbox pur"><div class="lb">👵 Ingrid & John — Key Info</div><ul>
+  <li><strong>Emma:</strong> Netball clinic 9am — drop off & pickup. 💊 medicine</li>
+  <li>Morning appointment — check status</li></ul></div>
+</div>
+<div class="ft">FOX FAMILY · STELLENBOSCH</div>
+</div>
+
+<!-- SUNDAY 15 MAR -->
+
+<div class="card" id="sun">
+<div class="hdr sun"><div class="dl">Sunday</div><div class="dt">15 March</div><div class="ds">Parents return from KZN · Prep for another big week</div></div>
+<div class="body">
+  <div class="blk family"><div class="bh"><div class="bi">✈️</div><div><div class="bn">Mark & Sophy Return</div></div><span class="tg travel">Travel</span></div>
+  <div class="it"><span class="tm">13:55</span> Flight DUR → CPT. Arrive ~16:10</div>
+  <div class="it">Ingrid & John hand back — thank you!</div></div>
+
+  <div class="rbox yel"><div class="lb">💡 Prep for Week of 16–22 March</div><ul>
+  <li>🏑 Mon 16 Mar: Hockey U13A vs Braeburn (Kenya) — Girls 14:40, Boys 15:35 at SomCol Astro</li>
+  <li>📝 Mon 16/Tue 17: Emma Junior Prep P/T Meetings (book on Engage)</li>
+  <li>📝 Tue 17 Mar: Luke English Literature Test</li>
+  <li>🏑 Tue 17 Mar: SW Hockey Club trials Boys U13 19:00 Beaumont (external)</li>
+  <li>🏑 Thu 19 Mar: Helderberg Zonal Hockey Trials 15:00–18:00 (if selected)</li>
+  <li>⛳ Fri 20 Mar: Mark & Luke fly to JHB for LIV Golf!</li>
+  <li>🏑 Fri 20 Mar: Hockey Astro Opening 3pm + Marimba 18:15 (Luke misses)</li>
+  <li>📝 Fri 20 Mar: Luke Maths Set 4 Test</li>
+  <li>🏐 Sat 21 Mar: Emma — Giselle's birthday party @ 12:00 ✅ + Netball Festival 8am</li>
+  <li>🎂 Sun 22 Mar: Elijah's birthday (whole family) + Mark & Luke return ~19:00</li>
+  <li>🧳 Ubuntu Day donations needed — diapers, Bennetts cream, wet wipes (from Tue 3 Mar)</li></ul></div>
+</div>
+<div class="ft">FOX FAMILY · STELLENBOSCH · WEEK OF 9 MAR 2026</div>
+</div>
+
+<script>
+const cards=document.querySelectorAll('.card');const links=document.querySelectorAll('.nav a');
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));const l=document.querySelector('.nav a[href="#'+e.target.id+'"]');if(l)l.classList.add('active');}});},{threshold:0.3});
+cards.forEach(c=>obs.observe(c));
+</script>
+
+</body>
+</html>
