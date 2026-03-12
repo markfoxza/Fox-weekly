@@ -4,179 +4,385 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fox Family — Weekly Summaries 9-15 Mar 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<title>Fox Family — Ingrid & John Schedule · Thu 12 – Sun 15 March 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Source Sans 3',sans-serif;background:#F7F5F0;color:#1A1A2E;line-height:1.5;padding:16px}
-  .nav{position:sticky;top:0;z-index:100;background:rgba(247,245,240,0.92);backdrop-filter:blur(8px);padding:10px 0;display:flex;justify-content:center;gap:6px;border-bottom:1px solid rgba(0,0,0,0.06)}
-  .nav a{text-decoration:none;font-size:11px;font-weight:600;padding:6px 14px;border-radius:20px;transition:all 0.2s}
-  .nav a.luke{background:#FCE4D6;color:#C45A1A}.nav a.luke:hover,.nav a.luke.active{background:#E8712A;color:#fff}
-  .nav a.emma{background:#D6E4F0;color:#2A5FA8}.nav a.emma:hover,.nav a.emma.active{background:#3B7DD8;color:#fff}
-  .nav a.gracie{background:#E2EFDA;color:#1E7A3D}.nav a.gracie:hover,.nav a.gracie.active{background:#2EA355;color:#fff}
-  .nav a.family{background:#EDE9FE;color:#6D28D9}.nav a.family:hover,.nav a.family.active{background:#8B5CF6;color:#fff}
-  .card{max-width:540px;margin:24px auto;background:#FFFDF8;border-radius:24px;overflow:hidden;box-shadow:0 6px 30px rgba(26,26,46,0.07)}
-  .whdr{padding:28px 28px 18px;color:#fff;position:relative;overflow:hidden}
-  .whdr::after{content:'';position:absolute;top:-40px;right:-30px;width:160px;height:160px;background:radial-gradient(circle,rgba(255,255,255,0.08) 0%,transparent 70%);border-radius:50%}
-  .whdr .sub{font-family:'Caveat',cursive;font-size:16px;opacity:.75}
-  .whdr h2{font-family:'Playfair Display',serif;font-size:30px;font-weight:800;margin:4px 0 6px;line-height:1.1}
-  .whdr .meta{font-size:12px;opacity:.65}
-  .whdr.luke{background:linear-gradient(135deg,#C45A1A,#E8712A,#F59E0B)}
-  .whdr.emma{background:linear-gradient(135deg,#1E40AF,#3B7DD8,#60A5FA)}
-  .whdr.gracie{background:linear-gradient(135deg,#166534,#2EA355,#4ADE80)}
-  .whdr.family{background:linear-gradient(135deg,#4C1D95,#7C3AED,#A78BFA)}
-  .wbody{padding:20px 24px 20px}
-  .wrow{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid #F0EDE8;align-items:flex-start}
-  .wrow:last-of-type{border-bottom:none}
-  .wday{font-weight:700;font-size:12px;min-width:40px;flex-shrink:0;padding-top:1px;color:#999}
-  .wcont{font-size:13px;color:#555;flex:1;line-height:1.45}.wcont strong{color:#1A1A2E}
-  .whl{padding:12px 16px;border-radius:12px;margin:12px 0;font-size:12.5px;line-height:1.5}
-  .whl.warn{background:#FEF2F2;border-left:4px solid #EF4444;color:#991B1B}
-  .whl.info{background:#EFF6FF;border-left:4px solid #3B82F6;color:#1E40AF}
-  .whl.ok{background:#F0FDF4;border-left:4px solid #22C55E;color:#166534}
-  .whl.kit{background:#FFFBEB;border-left:4px solid #F59E0B;color:#78350F}
-  .whl.pur{background:#F3EEFF;border-left:4px solid #8B5CF6;color:#4C1D95}
-  .whl strong{font-weight:700}
-  .whl-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;display:block}
-  .checklist{margin:6px 0 0 4px;list-style:none}
-  .checklist li{position:relative;padding-left:22px;margin:4px 0;font-size:12.5px;line-height:1.4}
-  .checklist li::before{content:'☐';position:absolute;left:0;top:0;font-size:14px;color:#999}
-  .ft{text-align:center;padding:8px 0 16px;font-size:9.5px;color:#bbb;letter-spacing:1px}
-  @media print{body{background:#fff;padding:0}.card{box-shadow:none;page-break-inside:avoid;page-break-after:always;margin:10px auto}.nav{display:none}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:#1a1a2e;color:#e0e0e0;line-height:1.6;padding:0}
+.top{background:linear-gradient(135deg,#6D28D9,#8B5CF6,#A78BFA);padding:32px 20px 24px;text-align:center;position:relative;overflow:hidden}
+.top::after{content:'';position:absolute;top:-60px;right:-40px;width:200px;height:200px;background:radial-gradient(circle,rgba(255,255,255,0.08),transparent 70%);border-radius:50%}
+.top h1{font-family:'DM Serif Display',serif;font-size:28px;color:#fff;margin-bottom:4px}
+.top .sub{font-size:13px;color:rgba(255,255,255,0.7);font-weight:300}
+.top .dates{font-size:18px;font-weight:700;color:#FDE68A;margin-top:6px}
+.top .emergency{margin-top:12px;background:rgba(255,255,255,0.12);border-radius:12px;padding:10px 14px;font-size:11px;color:rgba(255,255,255,0.85);text-align:left;max-width:400px;margin-left:auto;margin-right:auto}
+.top .emergency strong{color:#FDE68A}
+
+.nav{position:sticky;top:0;z-index:100;background:rgba(26,26,46,0.95);backdrop-filter:blur(10px);padding:10px 0;display:flex;justify-content:center;gap:8px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.nav a{text-decoration:none;font-size:12px;font-weight:600;padding:8px 16px;border-radius:20px;transition:all 0.2s}
+.nav a.thu{background:rgba(59,130,246,0.15);color:#60A5FA}
+.nav a.fri{background:rgba(234,88,12,0.15);color:#FB923C}
+.nav a.sat{background:rgba(139,92,246,0.15);color:#C4B5FD}
+.nav a.sun{background:rgba(52,211,153,0.15);color:#6EE7B7}
+.nav a:hover,.nav a.active{transform:scale(1.05)}
+.nav a.thu:hover,.nav a.thu.active{background:#3B82F6;color:#fff}
+.nav a.fri:hover,.nav a.fri.active{background:#EA580C;color:#fff}
+.nav a.sat:hover,.nav a.sat.active{background:#8B5CF6;color:#fff}
+.nav a.sun:hover,.nav a.sun.active{background:#059669;color:#fff}
+
+.day{max-width:560px;margin:20px auto;padding:0 16px}
+.dhdr{padding:20px 24px 16px;border-radius:20px 20px 0 0;position:relative;overflow:hidden}
+.dhdr::after{content:’’;position:absolute;top:-20px;right:-10px;width:100px;height:100px;background:radial-gradient(circle,rgba(255,255,255,0.06),transparent 70%);border-radius:50%}
+.dhdr .dl{font-size:12px;font-weight:300;text-transform:uppercase;letter-spacing:3px;color:rgba(255,255,255,0.5)}
+.dhdr .dt{font-family:‘DM Serif Display’,serif;font-size:28px;color:#fff;margin:2px 0}
+.dhdr .ds{font-size:11px;color:rgba(255,255,255,0.5)}
+.dhdr.thu{background:linear-gradient(135deg,#1E3A5F,#1E40AF)}
+.dhdr.fri{background:linear-gradient(135deg,#7C2D12,#C2410C)}
+.dhdr.sat{background:linear-gradient(135deg,#3B0764,#6D28D9)}
+.dhdr.sun{background:linear-gradient(135deg,#065F46,#059669)}
+
+.dbody{background:#22223b;border-radius:0 0 20px 20px;padding:20px;margin-bottom:24px}
+
+.evt{background:#2a2a42;border-radius:14px;padding:14px 16px;margin-bottom:12px;position:relative;border-left:4px solid #555}
+.evt.luke{border-left-color:#E8712A}
+.evt.emma{border-left-color:#3B7DD8}
+.evt.gracie{border-left-color:#2EA355}
+.evt.all{border-left-color:#8B5CF6}
+.evt.food{border-left-color:#F59E0B}
+.evt.directions{border-left-color:#EC4899;background:#2a2035}
+
+.evt .who{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:4px}
+.evt.luke .who{color:#E8712A}
+.evt.emma .who{color:#3B7DD8}
+.evt.gracie .who{color:#2EA355}
+.evt.all .who{color:#A78BFA}
+.evt.food .who{color:#F59E0B}
+.evt.directions .who{color:#EC4899}
+
+.evt .time{font-weight:700;color:#FDE68A;font-size:13px}
+.evt .what{font-size:13px;color:#e0e0e0;margin-top:2px;line-height:1.5}
+.evt .what strong{color:#fff}
+.evt .detail{font-size:11.5px;color:#999;margin-top:4px;line-height:1.5}
+.evt .detail strong{color:#ccc}
+
+.warn{background:#3d1f1f;border:1px solid #7f1d1d;border-radius:12px;padding:12px 16px;margin-bottom:12px}
+.warn .lb{font-size:10px;font-weight:700;color:#FCA5A5;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.warn li{font-size:12px;color:#FCA5A5;margin:3px 0 3px 16px;line-height:1.4}
+
+.medicine{background:#1a2e1a;border:1px solid #166534;border-radius:12px;padding:10px 16px;margin-bottom:12px;font-size:12px;color:#86EFAC}
+.medicine strong{color:#4ADE80}
+
+.tip{background:#2a2a3e;border-left:3px solid #FDE68A;border-radius:0 10px 10px 0;padding:10px 14px;margin-bottom:12px;font-size:11.5px;color:#bbb;line-height:1.5}
+.tip strong{color:#FDE68A}
+
+.ft{text-align:center;padding:16px 0 32px;font-size:10px;color:#555;letter-spacing:1.5px}
+
+@media print{body{background:#fff;color:#222}.top{background:#6D28D9;-webkit-print-color-adjust:exact}.dbody{background:#f5f5f5}.evt{background:#fff;border:1px solid #ddd}.warn{background:#fff8f8;border-color:#fca5a5}.medicine{background:#f0fdf4}.nav{display:none}.day{page-break-inside:avoid}}
 </style>
+
 </head>
 <body>
+
+<div class="top">
+<h1>Ingrid & John — Fox Family Schedule</h1>
+<div class="sub">Mark & Sophy are away in KZN · You're in charge!</div>
+<div class="dates">Thursday 12 – Sunday 15 March 2026</div>
+<div class="emergency">
+<strong>Mark:</strong> [call/WhatsApp as usual]<br>
+<strong>Sophy:</strong> [call/WhatsApp as usual]<br>
+<strong>Horse Riding (Di Arnold):</strong> 083 638 8608 — Call Di to open the gate at the riding yard<br>
+<strong>Chloe's party (Fri):</strong> Jeanelle Hanekom (mom picking Luke up from cricket)<br>
+<strong>Emma's friend after netball (Fri):</strong> Carla Kelly — 082 847 7950 — design agency
+</div>
+</div>
+
 <div class="nav">
-  <a href="#luke" class="luke">🏑 Luke</a><a href="#emma" class="emma">🎷 Emma</a><a href="#gracie" class="gracie">🌟 Gracie</a><a href="#family" class="family">🏠 Family</a>
+<a href="#thu" class="thu">Thu 12</a>
+<a href="#fri" class="fri">Fri 13</a>
+<a href="#sat" class="sat">Sat 14</a>
+<a href="#sun" class="sun">Sun 15</a>
 </div>
 
-<!-- LUKE -->
+<!-- ============ THURSDAY 12 MARCH ============ -->
 
-<div class="card" id="luke">
-<div class="whdr luke"><div class="sub">Week at a Glance</div><h2>🏑 Luke Fox</h2><div class="meta">Grade 7 · 9–15 Mar 2026 · Hockey Trials Rd 2&3 · Swimming Gala · Cricket Inter-House · Maths Test</div></div>
-<div class="wbody">
-  <div class="whl warn">🏑 <strong>Hockey-heavy week:</strong> Trials Mon & Tue → teams announced Wed → Swimming Gala Thu → Cricket + Maths test + Chloe's party Fri. Parents away Thu–Sun!</div>
-  <div class="wrow"><div class="wday">MON</div><div class="wcont"><strong>Hockey Trials Rd 2</strong> 15:30–16:30 SomCol Astro. <em>↻ PE</em></div></div>
-  <div class="wrow"><div class="wday">TUE</div><div class="wcont"><strong>Hockey Trials Rd 3</strong> 14:30–15:30 SomCol Astro. <em>↻ Cricket</em></div></div>
-  <div class="wrow"><div class="wday">WED</div><div class="wcont"><strong>Hockey teams announced!</strong> Music Concert 6pm (Marimba Band?). <em>↻ Cricket match</em></div></div>
-  <div class="wrow"><div class="wday">THU</div><div class="wcont">🏊 <strong>Swimming Gala 10:45–13:30.</strong> School ends 13:30. Parents fly to KZN.</div></div>
-  <div class="wrow"><div class="wday">FRI</div><div class="wcont">📝 <strong>Maths Class Test.</strong> 🏏 Cricket Inter-House (A: Taberer, B: Vineyard). 🎉 <strong>Chloe's party</strong> (evening)</div></div>
-  <div class="wrow"><div class="wday">SAT</div><div class="wcont">Free. Parents in KZN (Ingrid & John)</div></div>
-
-  <div class="whl kit"><span class="whl-title">🎒 Kit This Week</span><ul class="checklist">
-  <li><strong>Mon:</strong> Hockey kit + PE kit</li>
-  <li><strong>Tue:</strong> Hockey kit + cricket kit</li>
-  <li><strong>Wed:</strong> Cricket kit + Number Ones (if Music Concert)</li>
-  <li><strong>Thu:</strong> House shirt, navy shorts, SomCol swimsuit, cap, goggles, towel</li>
-  <li><strong>Fri:</strong> Cricket kit + party outfit</li></ul></div>
-
-  <div class="whl info"><span class="whl-title">📋 Tests</span><strong>Fri:</strong> Maths Class Test</div>
-
-  <div class="whl warn"><span class="whl-title">🔮 Next Week</span>
-  <strong>Mon 16:</strong> Hockey vs Braeburn Kenya (Boys 15:35, SomCol Astro)<br>
-  <strong>Tue 17:</strong> English Lit Test + SW Hockey U13 trials 19:00 Beaumont (external)<br>
-  <strong>Thu 19:</strong> Helderberg Zonal Hockey Trials 15:00–18:00 (if selected)<br>
-  <strong>Fri 20:</strong> ⛳ LIV Golf JHB with Dad! Maths Set 4 Test. Misses Astro Opening + Marimba</div>
+<div class="day" id="thu">
+<div class="dhdr thu">
+<div class="dl">Thursday</div>
+<div class="dt">12 March</div>
+<div class="ds">Swimming Gala · School ends early · Horse Riding · Science project · Gracie swim</div>
 </div>
-<div class="ft">LUKE FOX · GRADE 7 · SOMERSET COLLEGE</div>
+<div class="dbody">
+
+<div class="evt all">
+<div class="who">🅿️ Gala Day — Parking & Pickup</div>
+<div class="time">~10:00</div>
+<div class="what"><strong>Park close to the swimming pool</strong> (as you go towards the hockey fields).</div>
+<div class="detail">Kids go back to class first, get their bags, and then only come to you. <strong>Tell the kids where you are going to pick them up — confirm with the kids where you've parked and where you'll pick them up.</strong></div>
 </div>
 
-<!-- EMMA -->
-
-<div class="card" id="emma">
-<div class="whdr emma"><div class="sub">Week at a Glance</div><h2>🎷 Emma Fox</h2><div class="meta">Grade 5 · 9–15 Mar 2026 · Instrument Day · Triple Tests · Music Concert · Gala · Netball Trials · Clinic</div></div>
-<div class="wbody">
-  <div class="whl warn">🎷 <strong>Emma's biggest week of the term!</strong> Instrument Open Day → 3 tests Tue → Oral + Concert Wed → Gala Thu → Netball Trials + IsiXhosa Fri → Clinic Sat</div>
-  <div class="whl ok">💊 <strong>Daily:</strong> Morning medicine. <strong>Ingrid & John: please ensure Thu–Sun!</strong></div>
-  <div class="wrow"><div class="wday">MON</div><div class="wcont">🎵 <strong>Instrument Open Day 7:15am</strong> Prep Hall (Saxophone!). <em>↻ Drama + PE</em></div></div>
-  <div class="wrow"><div class="wday">TUE</div><div class="wcont">📝 <strong>3 TESTS: English Spelling + Art Theory + Science.</strong> <em>↻ Water Polo</em></div></div>
-  <div class="wrow"><div class="wday">WED</div><div class="wcont">📝 <strong>English Oral.</strong> 🎵 <strong>Music Concert 6pm</strong> (Saxophone/Ensemble?). Number Ones if performing</div></div>
-  <div class="wrow"><div class="wday">THU</div><div class="wcont">🏊 <strong>Swimming Gala 10:45–13:30.</strong> School ends 13:30. <em>↻ Riding 15:00 — check if on</em></div></div>
-  <div class="wrow"><div class="wday">FRI</div><div class="wcont">📝 <strong>IsiXhosa Written Test.</strong> 🏐 <strong>Netball Trials 13:30–15:00.</strong> <em>↻ SAXOPHONE</em></div></div>
-  <div class="wrow"><div class="wday">SAT</div><div class="wcont">🏐 <strong>Netball Skills Clinic 9am</strong> — Somerset College</div></div>
-
-  <div class="whl kit"><span class="whl-title">🎒 Kit This Week</span><ul class="checklist">
-  <li><strong>Mon:</strong> PE kit + Drama (arrive early 7:15 for Instrument Day!)</li>
-  <li><strong>Tue:</strong> Water polo kit</li>
-  <li><strong>Wed:</strong> Number Ones uniform (if Concert)</li>
-  <li><strong>Thu:</strong> House shirt, navy shorts, swimsuit, cap, goggles, towel + riding gear?</li>
-  <li><strong>Fri:</strong> SAXOPHONE + netball kit (meet courts 13:15)</li>
-  <li><strong>Sat:</strong> Netball kit for clinic 9am</li></ul></div>
-
-  <div class="whl warn"><span class="whl-title">🔮 Next Week</span>
-  <strong>Mon 16/Tue 17:</strong> Junior Prep P/T Meetings 1pm<br>
-  <strong>Sat 21:</strong> Netball Festival 8am + Giselle's party @ 12:00 ✅<br>
-  <strong>Thu 26:</strong> Ubuntu Day — bring donations (diapers, cream, wipes)</div>
-</div>
-<div class="ft">EMMA FOX · GRADE 5 · SOMERSET COLLEGE</div>
+<div class="evt luke">
+<div class="who">🏊 Luke — Swimming Gala</div>
+<div class="time">10:45 – 13:30</div>
+<div class="what"><strong>Inter-House Swimming Relay Gala</strong> at the school pool</div>
+<div class="detail">Kit: house shirt, navy shorts, SomCol swimsuit, cap, goggles, towel. <strong>School ends at 13:30 for Gr 2-7.</strong> Collect by 14:15 or Prep Library supervision.</div>
 </div>
 
-<!-- GRACIE -->
-
-<div class="card" id="gracie">
-<div class="whdr gracie"><div class="sub">Week at a Glance</div><h2>🌟 Gracie Fox</h2><div class="meta">Grade R · 9–15 Mar 2026 · P/T Meetings · Normal Recurring · Parents Away Thu–Sun</div></div>
-<div class="wbody">
-  <div class="whl pur">👵 <strong>Parents away Thu 12 – Sun 15 Mar.</strong> Ingrid & John in charge from Thursday.</div>
-  <div class="wrow"><div class="wday">MON</div><div class="wcont"><em>↻ Show & Tell</em></div></div>
-  <div class="wrow"><div class="wday">TUE</div><div class="wcont">👩‍🏫 <strong>P/T Feedback Meeting 1pm.</strong> <em>↻ Library bag · Gymnastics 13:15–14:15</em></div></div>
-  <div class="wrow"><div class="wday">WED</div><div class="wcont">👩‍🏫 <strong>P/T Meetings Day 2.</strong> <em>↻ Choir 13:20</em></div></div>
-  <div class="wrow"><div class="wday">THU</div><div class="wcont">Parents leave for KZN. <em>↻ Swimming things · Home swim 14:30</em></div></div>
-  <div class="wrow"><div class="wday">FRI</div><div class="wcont"><em>↻ NEST shirt</em></div></div>
-  <div class="wrow"><div class="wday">SAT</div><div class="wcont">Free day (Ingrid & John)</div></div>
-
-  <div class="whl kit"><span class="whl-title">↻ Weekly Kit</span><ul class="checklist">
-  <li><strong>Mon:</strong> Show & Tell item</li>
-  <li><strong>Tue:</strong> Library bag + gymnastics kit</li>
-  <li><strong>Wed:</strong> Choir (pickup 13:20)</li>
-  <li><strong>Thu:</strong> Swimming things + home swim 14:30</li>
-  <li><strong>Fri:</strong> NEST shirt</li></ul></div>
-
-  <div class="whl warn"><span class="whl-title">🔮 Next Week</span>
-  <strong>Fri 20:</strong> Prefect Playdate 10:30am + World Happiness Day<br>
-  <strong>Thu 26:</strong> Ubuntu Day<br>
-  <strong>Fri 27:</strong> END OF TERM 1 (11:00)</div>
-</div>
-<div class="ft">GRACIE FOX · GRADE R · SOMERSET COLLEGE</div>
+<div class="evt emma">
+<div class="who">🏊 Emma — Swimming Gala</div>
+<div class="time">10:45 – 13:30</div>
+<div class="what"><strong>Same gala as Luke.</strong> School ends 13:30.</div>
+<div class="detail">Emma participates in Grade 5 Girls Freestyle Relay (event #8) and Grade 5 Girls Medley Relay (event #20).</div>
 </div>
 
-<!-- FAMILY -->
-
-<div class="card" id="family">
-<div class="whdr family"><div class="sub">Week at a Glance</div><h2>🏠 Fox Family</h2><div class="meta">9–15 Mar 2026 · Arts & Culture Week · P/T Meetings · KZN Trip · Ingrid & John Coverage</div></div>
-<div class="wbody">
-  <div class="whl warn">✈️ <strong>Mark & Sophy in KZN Thu 12 – Sun 15 Mar.</strong> Hartford House, Mooi River. Ingrid & John with all 3 kids.</div>
-  <div class="wrow"><div class="wday">MON</div><div class="wcont">Luke: Hockey Trials Rd 2. Emma: Instrument Open Day 7:15. Start packing KZN!</div></div>
-  <div class="wrow"><div class="wday">TUE</div><div class="wcont">Luke: Hockey Trials Rd 3. Emma: 3 tests! Gracie: P/T Meeting. Keep packing.</div></div>
-  <div class="wrow"><div class="wday">WED</div><div class="wcont">Sophy: Me+You (Gym Hostel). Music Concert 6pm. Gracie P/T. <strong>Final pack + brief Ingrid & John!</strong></div></div>
-  <div class="wrow"><div class="wday">THU</div><div class="wcont">✈️ <strong>FLY TO KZN 10:25.</strong> Kids: Swimming Gala 10:45–13:30. School ends 13:30.</div></div>
-  <div class="wrow"><div class="wday">FRI</div><div class="wcont">🚨 Huge day for Ingrid & John: Luke Maths + cricket + Chloe party. Emma IsiXhosa + netball trials.</div></div>
-  <div class="wrow"><div class="wday">SAT</div><div class="wcont">Emma: Netball Clinic 9am. Parents in KZN.</div></div>
-  <div class="wrow"><div class="wday">SUN</div><div class="wcont">✈️ Parents return DUR→CPT ~16:10. Ingrid & John handback.</div></div>
-
-  <div class="whl pur"><span class="whl-title">👵 Ingrid & John Handover Checklist</span><ul class="checklist">
-  <li>Emma: 💊 Morning medicine EVERY DAY</li>
-  <li>Thu: Gala ends 13:30, collect by 14:15. Emma riding 15:00? Gracie swim 14:30</li>
-  <li>Fri: Emma netball courts 13:15. Luke cricket + party logistics. Gracie NEST shirt</li>
-  <li>Sat: Emma netball clinic 9am</li>
-  <li>Gracie: Thu swim things, Fri NEST shirt</li>
-  <li>Luke: Fri party transport for Chloe's birthday</li></ul></div>
-
-  <div class="whl warn"><span class="whl-title">🔮 The Week After (16–22 Mar)</span>
-  <strong>Mon 16:</strong> Hockey vs Braeburn Kenya + Emma P/T meetings<br>
-  <strong>Tue 17:</strong> Luke English Lit Test + SW Hockey U13 trials Beaumont 19:00<br>
-  <strong>Thu 19:</strong> Zonal Hockey Trials 15:00–18:00<br>
-  <strong>Fri 20:</strong> ⛳ Mark & Luke → JHB for LIV Golf! Gracie Prefect Playdate<br>
-  <strong>Sat 21:</strong> Emma: Netball Festival 8am + Giselle's party 12:00<br>
-  <strong>Sun 22:</strong> 🎂 Elijah's birthday (family) + Mark & Luke return ~19:00<br>
-  <strong>📦 Start collecting Ubuntu Day donations for 26 Mar</strong></div>
+<div class="evt all">
+<div class="who">📋 After Gala — Pickup</div>
+<div class="time">~13:30</div>
+<div class="what"><strong>When they're done, fetch Gracie from aftercare</strong> — the kids can show where it is. You <strong>MUST sign her out.</strong> Ask people there where to do it.</div>
+<div class="detail">Aftercare is on the tarred road below the tennis courts, to the left — right to the end. Emma will show you.</div>
 </div>
-<div class="ft">FOX FAMILY · STELLENBOSCH · 2026</div>
+
+<div class="evt all">
+<div class="who">🏠 Come Home</div>
+<div class="time">~13:45</div>
+<div class="what"><strong>Lunch for all.</strong> You and Grace can eat at home when you get back.</div>
 </div>
+
+<div class="evt gracie">
+<div class="who">🏊 Gracie — Home Swimming</div>
+<div class="time">14:30</div>
+<div class="what"><strong>Gracie's swimming lesson at home at 2:30.</strong> Eunice will help her get ready.</div>
+</div>
+
+<div class="evt emma">
+<div class="who">💊 Emma — Allergy Meds Before Riding</div>
+<div class="time">~14:00</div>
+<div class="what"><strong>Give Emma 7ml Texa allergy syrup</strong> before horse riding.</div>
+<div class="detail">The allergy meds are in the kitchen cupboard marked "Emma". She is <strong>very allergic</strong> — she must wear her gloves at riding. Take a wet cloth to wipe her down afterwards.</div>
+</div>
+
+<div class="evt emma">
+<div class="who">🐴 Emma — Horse Riding</div>
+<div class="time">15:00</div>
+<div class="what"><strong>Take Emma to horse riding at 15:00.</strong> It's at least 20 min from the house — like driving to school but you keep past it.</div>
+</div>
+
+<div class="evt directions">
+<div class="who">🗺️ Directions — Horse Riding (Di Arnold's yard)</div>
+<div class="what"><strong>How to get there:</strong></div>
+<div class="detail">
+• On the <strong>R44</strong> as you drive to Somerset West<br>
+• Pass <strong>Yonder Hill Wines</strong> and <strong>"Oor die Vlakte"</strong> on the left<br>
+• Next little road to the left — there is a big blue sign: <strong>"Peter Spence Oil Painting Restorer"</strong> and <strong>"Golden Eye Function Venue"</strong><br>
+• <strong>Turn left there</strong> and follow the road to the end<br>
+• <strong>Big green gates</strong><br>
+• <strong>Give Di a call on 083 638 8608 and she will open</strong> — please do NOT use the buzzer (private house, don't disturb the owners)<br>
+• You can't park in front of the garage doors
+</div>
+</div>
+
+<div class="evt luke">
+<div class="who">📚 Luke — Study</div>
+<div class="time">Afternoon (after gala/when back from horse riding)</div>
+<div class="what"><strong>LUKE — Maths test Friday.</strong> He needs to study this afternoon.</div>
+</div>
+
+<div class="evt emma">
+<div class="who">📚 Emma — Science Project + Study</div>
+<div class="time">Afternoon</div>
+<div class="what"><strong>Emma must finish her science project</strong> this afternoon. Also: <strong>IsiXhosa test Friday</strong> — study tonight.</div>
+</div>
+
+<div class="tip"><strong>Packing for Friday (do tonight!):</strong><br>
+⭐ LUKE — Pack for <strong>cricket</strong> and <strong>party</strong> (cowboy or crook costume!)<br>
+⭐ EMMA — Pack <strong>saxophone</strong> for next day's lesson. Pack <strong>netball clothes</strong> and a <strong>change of clothes</strong> for when she goes with the friend after netball.</div>
+
+<div class="evt food">
+<div class="who">🍽️ Food — Thursday & Friday</div>
+<div class="what">Eunice will make food for <strong>Thursday & Friday</strong> and extra <strong>bolognese for the weekend.</strong></div>
+<div class="detail">Eunice comes in at 6:30. She will come in till 12 on Saturday. Sunday is fine.</div>
+</div>
+
+</div>
+</div>
+
+<!-- ============ FRIDAY 13 MARCH ============ -->
+
+<div class="day" id="fri">
+<div class="dhdr fri">
+<div class="dl">Friday</div>
+<div class="dt">13 March</div>
+<div class="ds">🚨 Massive day · Maths test · Cricket · Netball Trials · Chloe's party · IsiXhosa test</div>
+</div>
+<div class="dbody">
+
+<div class="medicine">💊 <strong>EMMA — Morning medicine!</strong> Texa allergy 7ml. Kitchen cupboard marked "Emma".</div>
+
+<div class="evt all">
+<div class="who">🏫 Morning Routine</div>
+<div class="time">06:15 — Wake Luke and Emma</div>
+<div class="what">
+<strong>6:15am</strong> — Wake Luke and Emma up<br>
+<strong>6:30am</strong> — Gracie: help to dress her and brush teeth<br>
+<strong>6:30am</strong> — Eunice comes in, makes breakfast and helps pack<br>
+💊 Take vitamins and put on <strong>sunblock</strong> for them please<br>
+Remind kids of what they must pack. They can take a tiny sweet to school on a Friday.
+</div>
+</div>
+
+<div class="evt all">
+<div class="who">🚗 School Drop-off</div>
+<div class="time">Leave home no later than 07:20</div>
+<div class="what"><strong>Drop Luke and then the girls.</strong> They will show you. Take Gracie to her class — she will show you.</div>
+</div>
+
+<div class="evt all">
+<div class="who">🍱 Lunch Drop-off</div>
+<div class="time">When you fetch Gracie at 12:30</div>
+<div class="what"><strong>Eunice will make lunch for Luke and Emma.</strong> Drop it off at <strong>Mrs Whyman at the Prep reception.</strong> She knows about it — just say it's for Luke and Emma.</div>
+<div class="detail">Drop off either before or after you fetch Gracie. Pick up Gracie at 12:30 and take home.</div>
+</div>
+
+<div class="evt luke">
+<div class="who">📝 Luke — Maths Class Test</div>
+<div class="time">During school</div>
+<div class="what"><strong>Maths Class Test</strong> — he studied last night, should be ready.</div>
+</div>
+
+<div class="evt emma">
+<div class="who">📝 Emma — IsiXhosa Written Test</div>
+<div class="time">During school</div>
+<div class="what"><strong>IsiXhosa Written Test</strong></div>
+</div>
+
+<div class="evt luke">
+<div class="who">🏏 Luke — Cricket Inter-House</div>
+<div class="time">13:30</div>
+<div class="what"><strong>Cricket Inter-House Day.</strong> A teams on Taberer Field, B teams on Vineyard Field.</div>
+<div class="detail">Luke stays on for cricket. <strong>Jeanelle Hanekom</strong> (mom) has been asked to pick him up from cricket and take him to the party.</div>
+</div>
+
+<div class="evt emma">
+<div class="who">🏐 Emma — Netball Trials</div>
+<div class="time">13:30 – 15:00</div>
+<div class="what"><strong>Netball Trials</strong> — SomCol Netball Courts, U10-U13 Girls. Meet at courts by 13:15.</div>
+<div class="detail">If also in cricket: netball first, then cricket after. Pack netball kit!</div>
+</div>
+
+<div class="evt emma">
+<div class="who">👯 Emma — Going to Friend's After Netball</div>
+<div class="time">~15:00 → home ~17:00</div>
+<div class="what"><strong>Emma going after netball with her friend to Rhenish.</strong> They will drop her off at home at <strong>5ish.</strong></div>
+<div class="detail">Mom's details: <strong>Carla Kelly</strong> — 082 847 7950 (design agency). Emma has a <strong>change of clothes</strong> packed for this.</div>
+</div>
+
+<div class="evt luke">
+<div class="who">🤠 Luke — Chloe & William's 13th Birthday Party</div>
+<div class="time">18:30 – 21:30</div>
+<div class="what"><strong>Cowboys & Crook</strong> themed party at <strong>Bontevlei</strong></div>
+<div class="detail">Dresscode: dress like a <strong>cowboy or crook</strong>. Party till <strong>9:30pm</strong>. Jeanelle Hanekom picking Luke up from cricket → party. You'll need to collect him at 21:30 (or arrange with other parents).</div>
+</div>
+
+<div class="evt gracie">
+<div class="who">🌟 Gracie</div>
+<div class="time">Normal day</div>
+<div class="what"><strong>NEST shirt</strong> today (Friday). Normal pickup from school/aftercare.</div>
+</div>
+
+<div class="warn"><div class="lb">⚠️ Key Logistics — Friday</div><ul>
+<li><strong>Luke:</strong> Cricket kit + cowboy/crook costume + Jeanelle picking up from cricket</li>
+<li><strong>Emma:</strong> Saxophone + netball kit + change of clothes for friend. Carla Kelly dropping home ~5pm</li>
+<li><strong>Gracie:</strong> NEST shirt. Normal pickup</li>
+<li><strong>Luke pickup from party:</strong> 21:30 from Bontevlei</li>
+</ul></div>
+
+</div>
+</div>
+
+<!-- ============ SATURDAY 14 MARCH ============ -->
+
+<div class="day" id="sat">
+<div class="dhdr sat">
+<div class="dl">Saturday</div>
+<div class="dt">14 March</div>
+<div class="ds">Emma Netball Clinic · Quieter day · Eunice till 12 · Lunch at De Meye</div>
+</div>
+<div class="dbody">
+
+<div class="medicine">💊 <strong>EMMA — Morning medicine!</strong> Texa allergy 7ml.</div>
+
+<div class="evt emma">
+<div class="who">🏐 Emma — Netball Pre-Season Clinic</div>
+<div class="time">09:00 – 12:00</div>
+<div class="what"><strong>Netball U10-U13 Pre-Season Clinic</strong> — Somerset College Netball Courts</div>
+<div class="detail">
+Arrive at the courts by <strong>08:45</strong>. Wear sportswear (t-shirt, shorts/skort and socks), supportive netball or sports shoes. Bring water bottle with name on it, snack, hat, sunscreen.<br><br>
+<strong>Pack loads of water, snack, hat, sunscreen etc.</strong>
+</div>
+</div>
+
+<div class="evt luke">
+<div class="who">🏏 Luke</div>
+<div class="time">Free</div>
+<div class="what">Nothing on today. Luke nothing and Gracie nothing.</div>
+</div>
+
+<div class="evt gracie">
+<div class="who">🌟 Gracie</div>
+<div class="time">Free</div>
+<div class="what">Free day at home.</div>
+</div>
+
+<div class="evt food">
+<div class="who">🍽️ Eunice</div>
+<div class="time">Till 12:00</div>
+<div class="what"><strong>Eunice comes in till 12 on Saturday.</strong> Extra bolognese available for the weekend.</div>
+</div>
+
+<div class="evt all">
+<div class="who">🍽️ Lunch</div>
+<div class="time">12:00</div>
+<div class="what"><strong>Lunch at De Meye @ 12 — 6 pax</strong></div>
+</div>
+
+</div>
+</div>
+
+<!-- ============ SUNDAY 15 MARCH ============ -->
+
+<div class="day" id="sun">
+<div class="dhdr sun">
+<div class="dl">Sunday</div>
+<div class="dt">15 March</div>
+<div class="ds">Quiet day · Mark & Sophy return late afternoon · Thank you!</div>
+</div>
+<div class="dbody">
+
+<div class="medicine">💊 <strong>EMMA — Morning medicine!</strong> Texa allergy 7ml. Last day to remember!</div>
+
+<div class="evt all">
+<div class="who">☀️ Sunday</div>
+<div class="time">Free morning</div>
+<div class="what">Relaxed day. No activities for any of the kids.</div>
+</div>
+
+<div class="evt all">
+<div class="who">✈️ Mark & Sophy Return</div>
+<div class="time">~16:10</div>
+<div class="what"><strong>Parents land back in Cape Town around 16:10.</strong> Should be home by ~17:00.</div>
+<div class="detail">Ingrid & John hand back. <strong>Thank you so much!</strong></div>
+</div>
+
+<div class="tip"><strong>Looking ahead — Monday 16 March:</strong><br>
+Normal school day. Luke has Hockey vs Braeburn (Kenya) at 15:35. Emma has nothing special. Gracie Show & Tell. All back to normal!</div>
+
+</div>
+</div>
+
+<div class="ft">FOX FAMILY · STELLENBOSCH · MARCH 2026</div>
 
 <script>
-const cards=document.querySelectorAll('.card');const links=document.querySelectorAll('.nav a');
-const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));const l=document.querySelector('.nav a[href="#'+e.target.id+'"]');if(l)l.classList.add('active');}});},{threshold:0.3});
-cards.forEach(c=>obs.observe(c));
+const days=document.querySelectorAll('.day');const links=document.querySelectorAll('.nav a');
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));const id=e.target.id;const l=document.querySelector('.nav a.'+id);if(l)l.classList.add('active');}});},{threshold:0.2});
+days.forEach(d=>obs.observe(d));
 </script>
 
 </body>
